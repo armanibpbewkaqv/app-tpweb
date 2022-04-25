@@ -1,0 +1,2 @@
+"use strict";
+require.config(requireConfig),require(["jquery","tmpl","i18n","bootstrap","common"],function(t,i,e,n,r){function o(){r.dao.getCustomizeListHtml({productType:u,ismb:0},function(i){t(".swiper-container").each(function(){var t=this.id,i=3;"top_list_swiper"==t&&(i=1),new Swiper("#"+t,{slidesPerView:i,pagination:"#"+t+" .swiper-pagination",nextButton:"#"+t+" .swiper-button-next",prevButton:"#"+t+" .swiper-button-prev"})})})}var u=r.util.getQueryString("ptid");r.setCurrencyCodeCallback(function(){o()})});
